@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Erica+One&family=MedievalSharp&family=Ponomar&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+.concen{
+/* Rectangle 1 */
+
+position: fixed;
+width: 345px;
+height: 100%;
+
+background: #1D2735;
+display: block;
+}
+.selion-text{
+  /* SELION */
+
+position: absolute;
+width: 228px;
+height: 46px;
+left: 45px;
+top: 40px;
+
+font-family: 'Erica One';
+font-style: normal;
+font-weight: 400;
+font-size: 60px;
+line-height: 90px;
+
+color: #FFFFFF;
+}
+
+.hom-img{
+  /* home_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 1 */
+
+position: absolute;
+width: 47px;
+height: 47px;
+left: 45px;
+top: 270px;
+
+
+}
+
+.home-texte{
+  /* Home */
+
+position: absolute;
+width: 102px;
+height: 51px;
+left: 110px;
+top: 258px;
+
+font-family: 'Cantarell';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 70px;
+/* or 194% */
+
+color: #FFFFFF;
+
+
+}
+
+
+.sell-img{
+position: absolute;
+width: 45px;
+height: 45px;
+left: 47px;
+top: 341px;
+}
+
+.sell-texte{
+  /* Sell */
+
+position: absolute;
+width: 69px;
+height: 56px;
+left: 108px;
+top: 330px;
+
+font-family: 'Cantarell';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 70px;
+/* or 194% */
+
+color: #FFFFFF
+}
+
+.Messages-img{
+  /* chat_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 1 */
+
+position: absolute;
+width: 47px;
+height: 47px;
+left: 45px;
+top: 416px;
+
+
+}
+
+.Messages-texte{
+  /* Messages */
+
+position: absolute;
+width: 205px;
+height: 56px;
+left: 110px;
+top: 403px;
+
+font-family: 'Cantarell';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 70px;
+/* or 194% */
+
+color: #FFFFFF;
+}
+
+.acoun-img{
+/* account_circle_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 1 */
+
+position: absolute;
+width: 47px;
+height: 47px;
+left: 45px;
+top: 481px;
+
+}
+.acoun-texte{
+  /* My acount */
+
+position: absolute;
+width: 205px;
+height: 58px;
+left: 110px;
+top: 467px;
+
+font-family: 'Cantarell';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 70px;
+/* or 194% */
+
+color: #FFFFFF;
+}
+
+.Help-img{
+  /* help_120dp_FFFFFF_FILL0_wght400_GRAD0_opsz48 1 */
+
+position: absolute;
+width: 47px;
+height: 47px;
+left: 43px;
+top: 91.5%;
+
+
+
+}
+.Help-texte{
+  /* Help & Contact */
+
+position: absolute;
+width: 231px;
+height: 62px;
+left: 108px;
+top: 90%;
+
+font-family: 'Cantarell';
+font-style: normal;
+font-weight: 400;
+font-size: 29px;
+line-height: 70px;
+/* or 241% */
+
+color: #C0BFBF;
+
+}
+
+.search-wrapper{
+  margin-left: 345px; /* Відступ рівний ширині бокової панелі */
+  padding: 20px;
+  
+}
+
+.Serch{
+  width: 100%;
+
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+
+}
+
+.Serch:focus {
+  box-shadow: 0 0 5px 2px rgba(50, 52, 54, 0.5);
+  outline: none;
+}
+
+.burger-icon{
+  /* menu_124dp_000000_FILL0_wght400_GRAD0_opsz48 1 */
+
+position: absolute;
+width: 51px;
+height: 51px;
+left: 0px;
+top:22px;
+
+}
+
+#sideMenu {
+  position: fixed;
+
+}
+
+
+
+#burger{
+  display: none;
+}
+
+.close-icon{
+  display: none;
+}
+#Close{
+  all: unset; 
+  
+
+}
+
+@media (max-width: 900px){
+  .concen{
+    margin-top: -5px;
+    position: fixed;
+width: 100%;
+height: 101%;
+background: #1D2735;
+display: none;
+
+  }
+  .search-wrapper{
+    margin-left: 0px; /* Відступ рівний ширині бокової панелі */
+    padding: 20px;
+    padding-left: 51px;
+  }
+  .close-icon{
+    display: flex;
+width: 81px;
+height: 81px;
+
+    
+  }
+  #Close{
+    all: unset; 
+    display: flex;
+    margin-left:85vw;
+    margin-top: 50px;
+    cursor: pointer;
+
+  }
+  #sideMenu {
+    display: none; /* по дефолту приховано */
+  }
+
+  #burger {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    margin-top: 0px;
+  }
+
+}
