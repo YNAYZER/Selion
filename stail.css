@@ -289,7 +289,84 @@ top:22px;
   border: 1px solid #E3E3E3;
 }
 
+.card {
+  justify-content: center; /* вертикальне вирівнювання */
+  align-items: center;     /* горизонтальне вирівнювання */
 
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 218px;
+
+  height: 339px;
+  background: #F6F6F6;
+  border: 1px solid #E3E3E3;
+  
+}
+
+.card_img {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+  object-fit: contain; /* зберігає пропорції */
+  margin-top: -130px;
+}
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.p_h1_cards {
+position: absolute;
+
+
+  text-align: center;
+  font-family: 'Erica One';
+  font-size: 24px;
+  color: #707070;
+  margin-top: 90px;  
+  
+}
+
+.p_h2_cards{
+  /* Супер якісний мерч сталкеру */
+
+position: absolute;
+max-width: 180px;
+margin-top: 170px;
+font-family: 'CantoraOne';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 20px;
+text-align: center;
+
+color: #1A1A1A;
+}
+
+.p_price{
+  position: absolute;
+font-family: 'Enriqueta';
+font-style: normal;
+font-weight: 400;
+font-size: 26px;
+margin-top: 260px;
+margin-left: -60px;
+
+color: #3B3B3B;
+
+
+}
+
+#shop-cards{
+  position: absolute;
+  all: unset;
+ margin-top: 265px;
+ margin-left: 140px;
+ cursor: pointer;
+}
 
 
 @media (max-width: 900px){
@@ -348,5 +425,17 @@ height: 81px;
     height: 274px;
     margin: 10px;
   }
-}
+  .p_h1_cards{
+    
+    font-size: 18px;
+    margin-left: 145px;
 
+  }
+  .p_h2_cards{
+    margin-top: 100px;
+    font-size: 16px;
+  }
+}
+body.menu-open .towar {
+  display: none;
+}
