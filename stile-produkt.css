@@ -1,0 +1,168 @@
+.img_product{
+    /* Rectangle 11 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 566px;
+height: 584px;
+left: 365px;
+
+
+background: #F6F6F6;
+border: 1px solid #E3E3E3;
+border-radius: 9px;
+
+}
+
+.product-img{
+    
+position: absolute;
+width: 462.08px;
+height: 510.59px;
+border-radius: 9px;
+margin-left: 51px;
+margin-top: 35px;
+
+}
+
+.price{
+
+position: absolute;
+width: 467px;
+height: 92px;
+left: 958px;
+
+
+background: #F6F6F6;
+border: 1px solid #E3E3E3;
+border-radius: 9px;
+
+}
+.h1-name{
+    /* S.T.A.L.K.E.R */
+
+position: absolute;
+
+font-family: 'Erica One';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+/* identical to box height */
+
+color: #707070;
+margin-top: 13px;
+margin-left: 23px;
+
+}
+.h2-name{
+    /* Супер якісний мерч сталкеру */
+
+position: absolute;
+
+
+
+font-family: 'CantoraOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height */
+text-align: center;
+
+color: #1A1A1A;
+margin-top: 42px;
+margin-left: 23px;
+
+}
+.prise-name{
+    /* 499.99 */
+
+position:absolute;
+
+
+font-family: 'Enriqueta';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 48px;
+
+color: #000000;
+
+margin-left: 210px;
+margin-top: 5px;
+
+}
+
+.sell-name{
+
+position: absolute;
+width: 467px;
+height: 139px;
+left: 958px;
+margin-top: 124px;
+
+background: #F6F6F6;
+border: 1px solid #E3E3E3;
+border-radius: 9px;
+
+}
+
+.delivery{
+    /* Доставка по всій Україні */
+
+position: absolute;
+
+font-family: 'CantoraOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height */
+text-align: center;
+display: flex;
+color: #1A1A1A;
+margin-left: 95px;
+margin-top: 19px;
+
+}
+.buy{
+    /* Rectangle 13 */
+
+
+position: absolute;
+width: 425px;
+height: 62px;
+
+
+background: #27C227;
+border: 1px solid #E3E3E3;
+border-radius: 9px;
+
+margin-top: 70px;
+margin-left: 21px;
+cursor: pointer;
+}
+.buy-name{
+font-family: 'CantoraOne';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height */
+text-align: center;
+
+color: #FFFFFF;
+text-align: center;
+
+
+}
+
+.buy-img{
+position: absolute;
+width: 42px;
+height: 42px;
+margin-top: -33px;
+margin-left: -80px;
+}
