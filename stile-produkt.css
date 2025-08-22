@@ -166,3 +166,117 @@ height: 42px;
 margin-top: -33px;
 margin-left: -80px;
 }
+
+.description{
+/* Rounded rectangle */
+margin-top: 153px;
+
+position: absolute;
+width: 467px;
+height: 305px;
+
+
+
+background: #F6F6F6;
+border: 1px solid #E3E3E3;
+border-radius: 9px;
+
+}
+@media (max-width: 1440px){
+    .product-class{
+        max-width:162.08px ;
+    }
+    .price{
+        margin-top: 600px;
+        margin-left: -550px;
+    }
+    .sell-name{
+        margin-top: 700px;
+        margin-left: -550px;
+    }
+}
+@media (max-width: 900px){
+    .img_product{
+        margin-left: -250px;
+    }
+    .price{
+        margin-top: 600px;
+        margin-left: -800px;
+    }
+    .sell-name{
+        margin-top: 700px;
+        margin-left: -800px;
+    }
+    
+}
+
+@media (max-width: 730px){
+    .img_product{
+        margin-left: -300px;
+    }
+    .price{
+        margin-top: 600px;
+        margin-left: -830px;
+    }
+    .sell-name{
+        margin-top: 700px;
+        margin-left: -830px;
+    }
+    
+}
+@media (max-width: 660px){
+    .img_product{
+        margin-left: -330px;
+    }
+    .price{
+        margin-top: 600px;
+        margin-left: -860px;
+    }
+    .sell-name{
+        margin-top: 700px;
+        margin-left: -860px;
+    }
+    
+}
+@media (max-width: 640px){
+    .img_product{
+        margin-left: -320px;
+        width: 466px;
+        height: 484px;
+    }
+    .product-img{
+        width: 362.08px;
+        height: 410.59px;
+    }
+    .price{
+        margin-top: 500px;
+        margin-left: -912px;
+    }
+    .sell-name{
+        margin-top: 600px;
+        margin-left: -912px;
+    }
+    
+}
+@media (max-width: 530px){
+    .img_product{
+        margin-left: -300px;
+        width:366px;
+        height: 384px;
+    }
+    .product-img{
+        width: 262.08px;
+        height: 310.59px;
+    }
+    .price{
+        margin-top: 400px;
+        margin-left: -942px;
+    }
+    .sell-name{
+        margin-top: 500px;
+        margin-left: -942px;
+    }
+}
+body.menu-open .product-wrapper {
+    display: none;
+}
