@@ -6,6 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="stail.css">
     <link rel="stylesheet" href="stile-produkt.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("xVYfm9krNit6wHNtW"); // заміни на свій public key
+  })();
+</script>
 </head>
 <body>
     <button id="burger">
@@ -70,6 +76,63 @@
         </div>
       </div>
       </div>
+      <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+          <div class="cart-header">
+            <h2>🛒 Мій кошик</h2>
+            <button id="close-cart" class="close-btn">&times;</button>
+          </div>
+          <div id="cart-items" class="cart-items"></div>
+          <div class="cart-footer">
+            <p id="cart-total">Разом: 0 ₴</p>
+            <button id="checkout" class="checkout-btn">Оформити замовлення</button>
+          </div>
+        </div>
+      </div>
+      <div id="order-modal" class="cart-modal">
+        <div class="cart-content">
+          <div class="cart-header">
+            <h2>📦 Оформлення замовлення</h2>
+            <button id="close-order" class="close-btn">&times;</button>
+          </div>
+          <form id="order-form" class="order-form">
+            <label for="email">Електронна пошта:</label>
+            <input type="email" id="email" name="email" required>
+      
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone" required>
+      
+            <button type="submit" class="checkout-btn">Замовити</button>
+          </form>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const product = JSON.parse(localStorage.getItem('selectedProduct'));
+        
+          if (product) {
+            document.querySelector('.product-img').src = product.img;
+            document.querySelector('.h1-name').textContent = product.title;
+            document.querySelector('.h2-name').textContent = product.desc;
+            document.querySelector('.prise-name').textContent = product.price + ' ₴';
+          }
+        
+          // Додавання в кошик з product.html
+          const buyBtn = document.querySelector('.buy');
+          if (buyBtn) {
+            buyBtn.addEventListener('click', () => {
+              cart.push({
+                title: product.title,
+                price: parseFloat(product.price),
+                imgSrc: product.img
+              });
+              updateCartUI();
+              updateCartCounter();
+              document.getElementById('cart-modal').style.display = 'flex';
+            });
+          }
+        });
+        </script>
       <script src="nav.js"></script>
 </body>
 </html>
