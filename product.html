@@ -106,33 +106,7 @@
           </form>
         </div>
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', () => {
-          const product = JSON.parse(localStorage.getItem('selectedProduct'));
-        
-          if (product) {
-            document.querySelector('.product-img').src = product.img;
-            document.querySelector('.h1-name').textContent = product.title;
-            document.querySelector('.h2-name').textContent = product.desc;
-            document.querySelector('.prise-name').textContent = product.price + ' ₴';
-          }
-        
-          // Додавання в кошик з product.html
-          const buyBtn = document.querySelector('.buy');
-          if (buyBtn) {
-            buyBtn.addEventListener('click', () => {
-              cart.push({
-                title: product.title,
-                price: parseFloat(product.price),
-                imgSrc: product.img
-              });
-              updateCartUI();
-              updateCartCounter();
-              document.getElementById('cart-modal').style.display = 'flex';
-            });
-          }
-        });
-        </script>
+      
       <script src="nav.js"></script>
 </body>
 </html>
